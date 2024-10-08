@@ -23,3 +23,9 @@ chm2u () {
     find . -type f -exec chmod --reference="./$dummyname" '{}' \;
     rm -rf "$dummyname"
 }
+
+debi () {
+    for file in $(find $HOME/Downloads -name *.deb); do
+        sudo gdebi $file && rm $file -f
+    done
+}
