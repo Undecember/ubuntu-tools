@@ -2,3 +2,4 @@ commands
 
 ut      prints this message
 chm2u   cleans chmod as ubuntu's default newfiles
+debi    install .deb and remove .deb file 
